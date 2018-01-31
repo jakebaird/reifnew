@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Real Estate Investment Finance</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'stack-interface', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'bootstrap', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'theme', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'custom', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'socicon', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'iconsmind', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery-3.1.1.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'paralax', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'smooth-scroll.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'scripts', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'typed.min', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+
+  </head>
+
+  <body>
+     <body data-smooth-scroll-offset="77">
+        <div class="nav-container">
+            <div class="via-1517270805762" via="via-1517270805762" vio="reifhome">
+                <div class="bar bar--sm visible-xs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-2">
+                                <a href="index.html"> <img class="logo logo-dark" alt="logo" > <img class="logo logo-light" alt="logo" src="img/logo-light.png"> </a>
+                            </div>
+                            <div class="col-xs-9 col-sm-10 text-right">
+                                <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs hidden-sm"> <i class="icon icon--sm stack-interface stack-menu"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav id="menu1" class="bar bar-1 hidden-xs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-1 col-sm-2 hidden-xs">
+                                <div class="bar__module">
+									
+									<%= link_to root_path do %>
+   										<%= image_tag "reiflogob.png", class: "logo logo-dark" %>
+									<% end %>
+
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-11 col-sm-12 text-right text-left-xs text-left-sm">
+                                <div class="bar__module">
+                                    <ul class="menu-horizontal text-left">
+                                        <li> <%= link_to 'About', page_path('about') %> </li>
+                                        <li> <a href="#">Real estate</a> </li>
+                                        <li class="dropdown"> <span class="dropdown__trigger">Investment</span>
+                                            <div class="dropdown__container">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="dropdown__content col-md-2">
+                                                            <ul class="menu-vertical">
+                                                                <li> <%= link_to 'Education', page_path('education') %> </li>
+                                                                <li> <%= link_to 'Property report', page_path('propertyreport') %> </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown"> <span class="dropdown__trigger">Finance</span>
+                                            <div class="dropdown__container">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="dropdown__content col-md-2">
+                                                            <ul class="menu-vertical">                                  
+                                                               <li><%= link_to 'First Home Buyer', page_path('firsthomebuyer') %>></li>
+                                                                <li> <%= link_to 'Investor', page_path('investor') %></li>
+                                                                <li> <%= link_to 'Refinance', page_path('refinance') %> </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bar__module"> 
+
+									
+									<%= link_to '/propertyreport', :class => 'btn btn--sm type--uppercase' do %>
+ 								   <span class="btn__text">Free Property Report</span>
+								   <% end %>
+                                    <%= link_to 'pages/contact', :class => 'btn btn--sm btn--primary type--uppercase' do %>
+ 								   <span class="btn__text">Contact</span>
+								   <% end %>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+  </body>
+   <%= yield %>
+    <body data-smooth-scroll-offset="77">
+        <div class="nav-container"> </div>
+        <div class="main-container">
+            <footer class="text-center space--sm footer-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="heading-block">
+                                <ul class="list-inline list--hover">
+                                    <li> <%= link_to "About", "pages/about" %></li>
+                                    <li> <a href="#"><span>Our Team</span></a> </li>
+                                    <li> <a href="#"><span>Mission</span></a> </li>
+                                    <li> <a href="#"><span>Careers</span></a> </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="social-list list-inline list--hover">
+                                    <li><a href="#"><i class="socicon socicon-google icon icon--xs"></i></a></li>
+                                    <li><a href="#"><i class="socicon socicon-twitter icon icon--xs"></i></a></li>
+                                    <li><a href="#"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
+                                    <li><a href="#"><i class="socicon socicon-instagram icon icon--xs"></i></a></li>
+                                </ul>
+                            </div>
+                            <div> <span class="type--fine-print">Based in Brisbane, QLD</span> 
+                            	<img  class="flag" src="img/flag-2.png"> </div>
+                            <div> <span class="type--fine-print">© <span class="update-year"><%= Date.today.year %> </span>&nbsp;Credit Representative - REIF Finance Pty Ltd (CRN 450803) of National Mortgage Brokers Pty Ltd<br>Australian Credit Licence: 391209&nbsp;Real Estate Licence – REIF Real Estate Pty Ltd – Licence No. 4048198<br>.</span> <a class="type--fine-print" href="#">Privacy Policy</a> <a class="type--fine-print" href="#">Legal</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+ 
+
+    </body>
+
+</html>
+
